@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Coffe,Tee & U | <%= @title %> </title>
   <%=csrf_meta_tag%> 
@@ -8,12 +9,15 @@
    <![endif]-->
  <%=stylesheet_link_tag 'application.css'%>
 </head>
+
+
 <body>
- <div class="container">
- <header>
- <%= image_tag("logo.png",:alt=>"logo") %>
- <nav class="menubar">
-  <ul>
+  <div class="container">
+  <header>
+    <%= link_to image_tag("logo.png",:alt=>"logo"),root_path %>
+   
+    <nav class="menubar">
+    <ul>
       <li><%= link_to"Home",root_path %></li>
       <li><%= link_to"Our vision",vision_path%></li>
       <li><%= link_to"Our trail",trail_path%></li>
@@ -24,8 +28,11 @@
       <li><%= link_to"Reserve",reserve_path%></li>
       <li><%= link_to"Contact us",contact_path%></li>
     </ul>
- </nav>
+   </nav>
+
  </header>
+
+
  <section class="round">
  <%= yield %>
 </section>
