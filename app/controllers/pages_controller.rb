@@ -8,30 +8,30 @@ class PagesController < ApplicationController
   end
 
   def trail
-  @title="trail"
+  @title="Trail"
   end
 
   def transport
-  @title="transport"
+  @title="Transport"
   end
 
   def accommadition
-  @title="accommadition"
+  @title="Accommadition"
   end
 
   def activities
-  @title="activities"
+  @title="Activities"
   end
 
   def rates
-  @title="rates"
+  @title="Rates"
   end
 
   def reserve
-  @title="reserve"
+  @title="Reserve"
   end
 
   def contact
-  @title="contact"
+  @title="Contact"
   end
 end

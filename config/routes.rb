@@ -2,9 +2,18 @@ Coffe::Application.routes.draw do
 
 
 
-root :to => 'pages#home'
+root :to=>"pages#home"
 
 
+match '/home',:to=>'pages#home'
+match '/vision',:to=>'pages#vision'
+match '/trail',:to=>'pages#trail'
+match '/transport',:to=>'pages#transport'
+match '/accommadition',:to=>'pages#accommadition'
+match '/activities',:to=>'pages#activities'
+match '/rates',:to=>'pages#rates'
+match '/reserve',:to=>'pages#reserve'
+match '/contact',:to=>'pages#contact'
 
 
 
