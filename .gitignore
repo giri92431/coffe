@@ -17,7 +17,7 @@ doc/app
 doc/api
 *.swap
 *~
-Gemfile.lock
+
 temp/**/*
 .DS_Store
 
